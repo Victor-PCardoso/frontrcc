@@ -37,7 +37,7 @@ export function Routes() {
           component={Chat}
           options={{
             tabBarIcon: ({ color, size }) => (
-              <Entypo name="mic" color={color} size={size} />
+              <Feather name="mic" color={color} size={size} />
             ),
           }}
         />

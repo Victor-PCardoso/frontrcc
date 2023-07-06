@@ -14,9 +14,10 @@ const Header = () =>{
                         activeOpacity={0.1}
                         >
                             <Image
-                            source={require('../assets/imgs/logoSemNome.png')} style={{width:35, height:35}}/>
+                            source={require('../assets/imgs/LIZA(1).png')} style={{width:35, height:35 ,borderRadius: 25,
+                             }}/>
                         </TouchableOpacity>
-                        <Text style={{color:'white', paddingTop:16,marginLeft:5}}>Olá, Giussepi Camoli! </Text>
+                        <Text style={{color:'white', paddingTop:10,marginLeft:5,fontSize:18}}>Olá, Giussepi Camoli! </Text>
                     </View>
                     <View style={styles.headerElements} >
                         <View>
@@ -54,7 +55,6 @@ const styles = StyleSheet.create({
         paddingLeft:12,
         paddingRight:15
         
-
     }
 
 });

@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { AntDesign, Entypo } from '@expo/vector-icons';
+import { AntDesign, Entypo, Feather } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
@@ -11,28 +11,33 @@ function Menu({ navigation }){
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <TouchableOpacity style={styles.option}>
-          <View>
+        <TouchableOpacity style={styles.option}
+          
+        >
+          <View style={styles.optionContent}>
             <Text>Opção 1</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={styles.option}>
-          <View>
+          <View style={styles.optionContent}>
             <Text>Opção 2</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={styles.option}>
-          <View>
+          <View style={styles.optionContent}>
             <Text>Opção 3</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity style={styles.option}>
-          <View>
-            <Text>Opção 4</Text>
+          <View style={styles.optionContent}>
+            <Feather name="help-circle" size={20} />
+            <Text>Ajuda ao usuario</Text>
           </View>
         </TouchableOpacity>
         <TouchableOpacity
-         style={styles.option}>
+         style={styles.option}
+         onPress={() => navigation.navigate('About')}
+         >
           <View style={styles.optionContent}>
             <AntDesign name="infocirlceo" size={20} />
             <Text>Sobre o Aplicativo</Text>

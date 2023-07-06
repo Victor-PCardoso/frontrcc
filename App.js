@@ -6,7 +6,8 @@ import Home from './src/screens/home';
 import Header from './src/Components/Header';
 import Chat from './src/screens/chat';
 import { Routes } from './src/routes';
-
+import About from './src/screens/about';
+import Help from './src/screens/help';
 export default function App() {
   return (
   <Routes/>
